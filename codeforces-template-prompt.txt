@@ -1,0 +1,51 @@
+Create a template for solving a problem with Codeforces in Kotlin.
+The template must consist of two methods - main and solve, do not add any other methods.
+The solve method should be empty, I will solve the problem myself.
+Do not add any comments to the code.
+In the main method, the input data is read, converted to the appropriate types and passed to the solve method. The result of calling the solve method is assigned to the result variable, then output.
+If the problem statement requires outputting a list or array, it must be correctly converted to a string in accordance with the problem statement.
+If the problem statement specifies the number of input data sets in the first line, call the solve method in the repeat block as follows:
+```
+repeat(readln().toInt()) {
+    // parse data
+    val result = solve()
+    println(result)
+}
+```
+
+Here is an example template:
+```Kotlin
+fun solve(n: Int, nums: List<Int>): List<Int> {
+
+    return listOf()
+}
+
+fun main() {
+    repeat(readln().toInt()) {
+        val n = readln().toInt()
+        val nums = readln().split(' ').map(String::toInt)
+        val result = solve(n, nums)
+        println(nums.joinToString(" "))
+    }
+}
+```
+
+Also, based on the test examples given in the task, create tests for the solve method using the kotlin.test library. The tests should be called test1, test2, and so on, depending on the number of tests. Name the test class Tests. I should copy the template and tests separately.
+
+Test example:
+```kotlin
+import kotlin.test.Test
+import kotlin.test.assertEquals
+
+class Tests {
+
+    @Test
+    fun test1() {
+        val expected = listOf(10, 1)
+        val actual = solve(10, listOf(1, 2, 3))
+        assertEquals(expected, actual)
+    }
+}
+```
+
+Below is the task itself and test data:
