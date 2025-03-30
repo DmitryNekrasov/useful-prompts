@@ -1,4 +1,4 @@
-Create a template for solving a problem with Codeforces in Kotlin.
+Create a template for solving a Codeforces problem in Kotlin.
 The template must consist of two methods - main and solve, do not add any other methods.
 The solve method should be empty, I will solve the problem myself.
 Do not add any comments to the code.
