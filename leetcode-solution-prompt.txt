@@ -1,0 +1,45 @@
+Below you will see the LeetCode task and my solution in Kotlin.
+Do the following:
+1. Convert my solution to Java. Do not add imports and comments to the code.
+2. Convert the solution to C++. Do not add includes, comments, and the std:: prefix
+3. Convert the solution to Python 3. Do not add imports and comments to the code.
+4. Create a title for publishing my solution using the following template. Don't remove spaces before "Kotlin" and after "Python".
+```markdown
+[ Kotlin | Java | C++ | Python ] Simple <technique> solution, detailed explanation
+```
+Replace <technique> to main solution technique, for example: sorting, DP, DFS, Dijkstra's Algorithm, Backtrackng, Two Pointers, etc.
+5. Create a description of my solution using the following Markdown template. Create it as artifact and show it on the right side. Use $$ $$ markdown for complexity, for example: $$O(n)$$.
+```markdown
+# Intuition
+<!-- Describe thoughts on how to solve this problem. -->
+
+# Approach
+<!-- Describe approach to solving the problem. -->
+
+# Complexity
+- Time complexity:
+<!-- Add time complexity here, e.g. $$O(n)$$ -->
+
+- Space complexity:
+<!-- Add space complexity here, e.g. $$O(n)$$ -->
+
+# Code
+```kotlin []
+// Insert my Kotlin code
+```
+
+```java []
+// Insert the converted Java code
+```
+
+```cpp []
+// Insert the converted C++ code
+```
+
+```python3 []
+# Insert the converted Python 3 code
+```
+```
+Remove <!-- --> comments.
+There is no need to rewrite my original solution. I am confident in it, as I tested it on LeetCode and got Accepted.
+The task and my solution:
