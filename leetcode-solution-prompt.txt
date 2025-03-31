@@ -1,6 +1,13 @@
 Below you will see the LeetCode task and my solution in Kotlin.
 Do the following:
-1. Convert my solution to Java. Do not add imports and comments to the code.
+1. Convert my solution to Java. Do not add imports and comments to the code. If my original Kotlin solution uses a pair of the same types, use an array of two elements of that type instead. If the pair is of different types (e.g. String and Int), use record Pair, like this:
+```kotlin
+val person = "John" to 20
+```
+```java
+record Pair(String name, int age) {}
+var person = new Pair("John", 20);
+```
 2. Convert the solution to C++. Do not add includes, comments, and the std:: prefix
 3. Convert the solution to Python 3. Do not add imports and comments to the code.
 4. Create a title for publishing my solution using the following template. Don't remove spaces before "Kotlin" and after "Python".
