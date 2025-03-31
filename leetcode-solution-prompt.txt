@@ -7,7 +7,7 @@ Do the following:
 ```markdown
 [ Kotlin | Java | C++ | Python ] Simple <technique> solution, detailed explanation
 ```
-Replace <technique> to main solution technique, for example: sorting, DP, DFS, Dijkstra's Algorithm, Backtrackng, Two Pointers, etc.
+Replace <technique> to main solution technique, for example: Sorting, DP, Caching, DFS, BFS, Dijkstra's Algorithm, DSU, Backtracking, Two Pointers, etc.
 5. Create a description of my solution using the following Markdown template. Create it as artifact and show it on the right side. Use $$ $$ markdown for complexity, for example: $$O(n)$$.
 ```markdown
 # Intuition
