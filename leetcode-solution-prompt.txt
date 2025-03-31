@@ -1,12 +1,58 @@
 Below you will see the LeetCode task and my solution in Kotlin.
 Do the following:
-1. Convert my solution to Java. Do not add imports and comments to the code. If my original Kotlin solution uses a pair of the same types, use an array of two elements of that type instead. If the pair is of different types (e.g. String and Int), use record Pair, like this:
+1. Convert my solution to Java. Do not add imports and comments to the code.
+If my original Kotlin solution uses a pair of the same types, use an array of two elements of that type instead. For example:
 ```kotlin
-val person = "John" to 20
+class Solution {
+    fun solve(): Int {
+        // ...
+        val stack: Deque<Pair<Int, Int>> = LinkedList()
+        for ((i, score) in scores.withIndex()) {
+            stack.push(score to i)
+        }
+        // ...
+    }
+}
 ```
 ```java
-record Pair(String name, int age) {}
-var person = new Pair("John", 20);
+class Solution {
+    public int solve() {
+        // ...
+        Deque<int[]> stack = new LinkedList<>();
+        for (int i = 0; i < scores.length; i++) {
+            int score = scores[i];
+            stack.push(new int[]{score, i});
+        }
+        // ...
+    }
+}
+```
+If the pair is of different types (e.g. Int and Long), use record Pair. For example:
+```kotlin
+class Solution {
+    fun solve(): Int {
+        // ...
+        val list = MutableListOf<Pair<Int, Long>>()
+        for (num in nums) {
+            list += num to num.toLong() * num
+        }
+        // ...
+    }
+}
+```
+```java
+class Solution {
+    private record Pair(int num, long square) {}
+
+    public int solve() {
+        // ...
+        var list = new ArrayList<Pair>()
+        for (int num : nums) {
+            list.add(new Pair(num, (long) num * num));
+        }
+        // ...
+    }
+}
 ```
 2. Convert the solution to C++. Do not add includes, comments, and the std:: prefix
 3. Convert the solution to Python 3. Do not add imports and comments to the code.
