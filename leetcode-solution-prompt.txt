@@ -95,4 +95,5 @@ Replace <technique> to main solution technique, for example: Sorting, DP, Cachin
 ```
 Remove <!-- --> comments.
 There is no need to rewrite my original solution. I am confident in it, as I tested it on LeetCode and got Accepted.
+Ultrathink.
 The task and my solution:
