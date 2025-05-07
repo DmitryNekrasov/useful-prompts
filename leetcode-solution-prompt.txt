@@ -1,7 +1,8 @@
 Below you will see the LeetCode task and my solution in Kotlin.
 Do the following:
 1. Convert my solution to Java 21. Do not add imports and comments to the code. Do not use fully qualified class names, for example java.util.List<Integer>, use just List<Integer>. All necessary imports are done by the testing system. If the variable type is generic, (for example: List<Integer>, Function<Long, String>), use the 'var' keyword to declare the variable, which was introduced in Java 10.
-If my original Kotlin solution uses a pair of the same types, use an array of two elements of that type instead. For example:
+If the original Kotlin solution uses a data class, use a record instead.
+If the original Kotlin solution uses a pair of the same types, use an array of two elements of that type instead. For example:
 ```kotlin
 class Solution {
     fun solve(): Int {
